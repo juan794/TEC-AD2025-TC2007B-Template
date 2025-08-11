@@ -28,26 +28,26 @@ To run the webapp using Docker Compose, follow these steps:
 
     ```yml
     services:
-  api:
-    build:
-      context: api
-      dockerfile: Dockerfile
-    ports:
-      - XXXX:3000 # <- Change XXXX
-    environment:
-      - DB_HOST=database
-  web:
-    build:
-      context: web
-      dockerfile: Dockerfile
-    environment:
-      - VITE_API_URL=http://api:3000
-    ports:
-      - XXXX:3080 # <- Change XXXX
-  database:
-    build:
-      context: database
-      dockerfile: Dockerfile
+        api:
+            build:
+            context: api
+            dockerfile: Dockerfile
+            ports:
+            - XXXX:3000 # <- Change XXXX
+            environment:
+            - DB_HOST=database
+        web:
+            build:
+            context: web
+            dockerfile: Dockerfile
+            environment:
+            - VITE_API_URL=http://api:3000
+            ports:
+            - XXXX:3080 # <- Change XXXX
+        database:
+            build:
+            context: database
+            dockerfile: Dockerfile
     ```
 
 2. **Start the services** using Docker Compose:
