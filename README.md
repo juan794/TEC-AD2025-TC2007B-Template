@@ -1,4 +1,4 @@
-# Project Template for MESI 2025
+# Backend Template - TC2007B 2025
 
 ## Project Architecture
 ![Project Architecture](architecture.png)
