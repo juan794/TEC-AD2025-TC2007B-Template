@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a5paper, landscape, margin=1in}
+
+\begin{document}
+
+You have an appointment with $doctor$. The appointment details are the follow:
+
+\begin{center}
+\begin{tabular}{ r l }
+ Date: & $date$ \\ 
+ Time: & $time$ \\  
+\end{tabular}
+\end{center}
+
+Please print and bring this document to your appointment.
+
+\begin{center}
+\includegraphics[scale=0.5]{qr}
+\end{center}
+
+\end{document}

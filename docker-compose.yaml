@@ -1,0 +1,25 @@
+services:
+  api:
+    build:
+      context: api
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      - DB_HOST=database
+  web:
+    build:
+      context: web
+      dockerfile: Dockerfile
+    environment:
+      - VITE_API_URL=http://api:3000
+    ports:
+      - 3080:3080
+  database:
+    build:
+      context: database
+      dockerfile: Dockerfile
+
+volumes:
+  ollama: {}
+    
