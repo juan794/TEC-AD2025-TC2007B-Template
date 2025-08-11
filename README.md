@@ -1,4 +1,4 @@
-# Backend Template - TC2007B 2025
+# Template for Backend & Admin GUI - TC2007B 2025
 
 ## Project Architecture
 ![Project Architecture](architecture.png)
@@ -11,7 +11,6 @@ To run the project successfully, you’ll need to have the following tools insta
     - Create an account in Docker Hub ([https://hub.docker.com/](https://hub.docker.com/))
 - NodeJS ([https://nodejs.org/en](https://nodejs.org/en))
 - Python3 ([https://www.python.org/downloads/](https://www.python.org/downloads/))
-- Ollama ([https://ollama.com/download](https://ollama.com/download))
 
 ## Running Locally on Your Computer
 To run the webapp using Docker Compose, follow these steps:
